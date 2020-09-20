@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pagCadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Quantico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="cabecalho">
+        <img class="logo" src="Arrow_-_Right_2.png">
+        <input class="pesquisa" type="text" placeholder="Pesquise filmes...">
+        <button>
+            <img src="Bookmark.png">
+            <p>Favoritos</p>
+        </button>
+        <button>
+            <img src="Discount.png">
+            <p>Promoção</p>
+        </button>
+        <div class="perfil">
+            <p class="nomeDoPerfil">Bem vindo gatinho</p>
+            <img class="fotoDoPerfil" src="images.jpg">
+        </div>
+    </div>
+    <div class="cadastro">
+        <div class="infoPessoais">
+            <div class="infoIniciais">
+                <h2>Informações Iniciais</h2>
+                <div class="linha1">
+                    <div class="divInput">
+                        <span>Insira seu nome completo</span>
+                        <input type="text" placeholder="Ex: Matheus Vinicius">
+                    </div>
+                    <div class="divInput">
+                        <span>Insira seu e-mail</span>
+                        <input type="email" placeholder="exemplo@exemplo.com">
+                    </div>
+                </div>
+                <div class="divInput">
+                    <span>Telefone</span>
+                    <input type="tel" placeholder="+55 (00) 00000-0000">
+                </div>
+            </div>
+            <div class="infoIniciais">
+                <h2>Informações de Endereço</h2>
+                <div class="linha1">
+                    <div class="divInput">
+                        <span>CEP</span>
+                        <input type="text" placeholder="00000-000">
+                    </div>
+                    <div class="divInput">
+                        <span>País</span>
+                        <input type="text" placeholder="Ex: Brasil">
+                    </div>
+                </div>
+                <div class="linha1">
+                    <div class="divInput">
+                        <span>Cidade</span>
+                        <input type="text" placeholder="Ex.: Salvador">
+                    </div>
+                    <div class="divInput">
+                        <span>Bairro</span>
+                        <input type="text" placeholder="Ex: Rio Vermelho">
+                    </div>
+                </div>
+                <div class="divInput">
+                    <span>Número</span>
+                    <input type="text" placeholder="Ex: 00">
+                </div>
+            </div>
+            <div class="infoIniciais">
+                <h2>Informações de Pagamento</h2>
+                <div class="linha1">
+                    <div class="divInput">
+                        <span>Número do cartão</span>
+                        <input type="number" placeholder="0000 0000 0000 0000">
+                    </div>
+                    <div class="divInput">
+                        <span>Nome do cartão</span>
+                        <input type="text" placeholder="Ex: MATHEUS VINICIUS">
+                    </div>
+                </div>
+                <div class="linha1">
+                    <div class="divInput">
+                        <span>Data de Expiração</span>
+                        <input type="text" placeholder="DD/MM/YYYY">
+                    </div>
+                    <div class="divInput">
+                        <span>CVV</span>
+                        <input type="text" placeholder="000">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sacolaComPedido">
+            <h2>Resumo dos pedidos</h2>
+
+            <div class="sacolaPrincipal">
+                <div class="filmeSelecionado">
+                    <div class="infoDeFilmeSelecionado">
+                        <span class="posterDoFilmes"></span>
+                        <div class="detalhesDoFilme">
+                            <p class="nomeDoFilmeSelecionado">Joker</p>
+                            <p>R$ <span class="precoDoFilmeSelecionado">2,33</span></p>
+                        </div>
+                    </div>
+                    <div class="adicionarItens">
+                        <button class="adicionar">+</button>
+                        <p class="quantidade">2</p>
+                        <button class="remover">-</button>
+                    </div>
+                </div>
+                <div class="filmeSelecionado">
+                    <div class="infoDeFilmeSelecionado">
+                        <span class="posterDoFilmes"></span>
+                        <div class="detalhesDoFilme">
+                            <p class="nomeDoFilmeSelecionado">Joker</p>
+                            <p>R$ <span class="precoDoFilmeSelecionado">2,33</span></p>
+                        </div>
+                    </div>
+                    <div class="adicionarItens">
+                        <button class="adicionar">+</button>
+                        <p class="quantidade">2</p>
+                        <button class="remover2"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="inserirCupom">
+                <span>Insira seu cupom</span>
+                <input type="text" placeholder="Cupom de desconto">
+                <button class="confirmar"><span>Comprar agora</span><span>R$<span class="precoConfirmar"> 04,98</span></span></button>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
