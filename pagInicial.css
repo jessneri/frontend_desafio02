@@ -1,6 +1,6 @@
 body {
     box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
     margin: 0;
     background-color: #252829;
 }
@@ -9,7 +9,7 @@ body {
 /*cabeçalho*/
 
 .cabecalho {
-    background-color: #0F1C26;
+    background-color: #0f1c26;
     min-height: 104px;
     display: flex;
     flex: 0, 1;
@@ -21,11 +21,11 @@ body {
 .pesquisa {
     min-width: 456px;
     min-height: 56px;
-    background-color: #171B1E;
-    color: #FDFDFD;
+    background-color: #171b1e;
+    color: #fdfdfd;
     border: none;
     padding-left: 15px;
-    background-image: url("icons8-pesquisar-64.png");
+    background-image: url("pics/icons8-pesquisar-64.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 30px;
@@ -84,16 +84,17 @@ body {
 /*banner*/
 
 .bannerDeCupom {
-    background-image: url(group_4.png);
+    background-image: url(pics/group_4.png);
     min-width: 940px;
     min-height: 119px;
     background-size: 100% 100%;
     background-position: center;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: left;
-    font-family: 'Quantico', sans-serif;
+    font-family: "Quantico", sans-serif;
     padding-left: 24px;
+    position: relative;
 }
 
 .cupom {
@@ -105,23 +106,19 @@ body {
 .divCupom1 {
     padding-right: 24px;
     margin-left: 24px;
-    padding-bottom: 16px;
 }
 
 .divCupom2 {
     padding-top: 0px;
     margin-left: 24px;
-    padding-bottom: 16px;
 }
 
 .divCupom h1 {
     font-size: 40px;
-    margin-bottom: 2px
 }
 
 .divCupom h2 {
     font-size: 24px;
-    margin-bottom: 2px
 }
 
 .cupom img {
@@ -129,11 +126,17 @@ body {
     font-size: 16px;
 }
 
+.money {
+    position: absolute;
+    right: 24px;
+    bottom: 0;
+}
+
 
 /*Top Filmes*/
 
 .cardapio {
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
     min-width: 940px;
     min-height: 119px;
 }
@@ -148,7 +151,7 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
-    max-width: 980px
+    max-width: 980px;
 }
 
 .filme {
@@ -205,7 +208,7 @@ body {
 
 .notaDoFilme {
     font-weight: bold;
-    color: #FBCD6E;
+    color: #fbcd6e;
 }
 
 .sacolaDoFilme {
@@ -216,7 +219,7 @@ body {
     margin-left: 8px;
     margin-right: 8px;
     margin-bottom: 6px;
-    background-color: #A785ED;
+    background-color: #a785ed;
     border: none;
     font-weight: bold;
     font-size: 12px;
@@ -235,16 +238,16 @@ body {
 
 .botoesDosGenero button {
     background: none;
-    border: 2px solid #E183C8;
-    color: #E183C8;
+    border: 2px solid #e183c8;
+    color: #e183c8;
     min-width: 168px;
     min-height: 38px;
     text-align: center;
 }
 
 .botoesDosGenero button:hover {
-    color: #E183C8;
-    border: 2px solid #E183C8;
+    color: #e183c8;
+    border: 2px solid #e183c8;
     background: rgba(225, 131, 200, 0.2);
 }
 
@@ -253,7 +256,7 @@ body {
     flex-direction: column;
     color: white;
     flex-wrap: wrap;
-    max-width: 980px
+    max-width: 980px;
 }
 
 .listaFilmes2 .filmes {
@@ -268,7 +271,7 @@ body {
     max-width: 168px;
     min-height: 301px;
     margin-top: 24px;
-    background: rgba(0, 0, 0, 0.4)
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .listaFilmes2 .filme:hover {
@@ -297,19 +300,19 @@ body {
 .sacolaGeral {
     max-height: 580px;
     min-width: 312px;
-    background-color: #171B1E;
+    background-color: #171b1e;
     margin-left: 60px;
     position: sticky;
     top: 0;
 }
 
 .sacolaIcone {
-    background-color: #A785ED;
+    background-color: #a785ed;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-size: 18px;
 }
@@ -357,13 +360,13 @@ body {
     min-width: 310px;
     min-height: 40px;
     margin-top: 3px;
-    background-color: #0B1217;
-    color: #FDFDFD;
+    background-color: #0b1217;
+    color: #fdfdfd;
     border: none;
     margin-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    background-image: url("icons8-bilhete-48.png");
+    background-image: url("pics/icons8-bilhete-48.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 30px;
@@ -376,7 +379,7 @@ body {
 .sacolaComPedido {
     max-height: 580px;
     min-width: 312px;
-    background-color: #171B1E;
+    background-color: #171b1e;
     margin-left: 60px;
     position: sticky;
     display: flex;
@@ -420,8 +423,8 @@ body {
 }
 
 .adicionar {
-    background-color: #0B1217;
-    color: #6FCF97;
+    background-color: #0b1217;
+    color: #6fcf97;
     font-size: 22px;
     border: none;
     max-height: 26px;
@@ -435,8 +438,8 @@ body {
 }
 
 .remover {
-    background-color: #0B1217;
-    color: #FF7366;
+    background-color: #0b1217;
+    color: #ff7366;
     font-size: 20px;
     border: none;
     max-height: 26px;
@@ -445,8 +448,8 @@ body {
 }
 
 .remover2 {
-    background-color: #0B1217;
-    background-image: url("icons8-remover-24.png");
+    background-color: #0b1217;
+    background-image: url("pics/icons8-remover-24.png");
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -458,8 +461,8 @@ body {
 .confirmar {
     min-width: 338px;
     min-height: 40px;
-    background-color: #E25EBF;
-    color: #FDFDFD;
+    background-color: #e25ebf;
+    color: #fdfdfd;
     border: none;
     font-weight: bold;
     display: flex;
