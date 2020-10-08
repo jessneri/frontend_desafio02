@@ -1,6 +1,6 @@
 body {
     box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
     margin: 0;
     background-color: #252829;
 }
@@ -9,7 +9,7 @@ body {
 /*cabeçalho*/
 
 .cabecalho {
-    background-color: #0F1C26;
+    background-color: #0f1c26;
     min-height: 104px;
     display: flex;
     justify-content: space-evenly;
@@ -20,11 +20,11 @@ body {
 .pesquisa {
     min-width: 456px;
     min-height: 56px;
-    background-color: #171B1E;
-    color: #FDFDFD;
+    background-color: #171b1e;
+    color: #fdfdfd;
     border: none;
     padding-left: 15px;
-    background-image: url("icons8-pesquisar-64.png");
+    background-image: url("pics/icons8-pesquisar-64.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 30px;
@@ -76,8 +76,8 @@ body {
     justify-content: center;
     flex-direction: column;
     min-width: 744px;
-    background-color: #171B1E;
-    color: #FDFDFD;
+    background-color: #171b1e;
+    color: #fdfdfd;
     margin-bottom: 16px;
 }
 
@@ -109,13 +109,13 @@ body {
     min-height: 40px;
     margin-top: 5px;
     margin-bottom: 30px;
-    background-color: #0B1217;
+    background-color: #0b1217;
     border: none;
     padding-left: 16px;
 }
 
 .infoPessoais input:hover {
-    border: 1px solid #8C8C8C;
+    border: 1px solid #8c8c8c;
 }
 
 
@@ -124,7 +124,7 @@ body {
 .sacolaGeral {
     max-height: 580px;
     min-width: 312px;
-    background-color: #171B1E;
+    background-color: #171b1e;
     margin-left: 60px;
     position: sticky;
     top: 0;
@@ -146,7 +146,7 @@ body {
 .sacolaComPedido {
     max-height: 450px;
     min-width: 312px;
-    background-color: #171B1E;
+    background-color: #171b1e;
     margin-left: 60px;
     position: sticky;
     display: flex;
@@ -196,8 +196,8 @@ body {
 }
 
 .adicionar {
-    background-color: #0B1217;
-    color: #6FCF97;
+    background-color: #0b1217;
+    color: #6fcf97;
     font-size: 22px;
     border: none;
     max-height: 26px;
@@ -206,7 +206,7 @@ body {
 }
 
 .adicionar:hover {
-    background: linear-gradient(0deg, rgba(107, 107, 107, 0.37), rgba(107, 107, 107, 0.37));
+    background: linear-gradient( 0deg, rgba(107, 107, 107, 0.37), rgba(107, 107, 107, 0.37));
 }
 
 .quantidade {
@@ -215,8 +215,8 @@ body {
 }
 
 .remover {
-    background-color: #0B1217;
-    color: #FF7366;
+    background-color: #0b1217;
+    color: #ff7366;
     font-size: 20px;
     border: none;
     max-height: 26px;
@@ -225,12 +225,12 @@ body {
 }
 
 .remover:hover {
-    background: linear-gradient(0deg, rgba(107, 107, 107, 0.37), rgba(107, 107, 107, 0.37));
+    background: linear-gradient( 0deg, rgba(107, 107, 107, 0.37), rgba(107, 107, 107, 0.37));
 }
 
 .remover2 {
-    background-color: #0B1217;
-    background-image: url("icons8-remover-24.png");
+    background-color: #0b1217;
+    background-image: url("pics/icons8-remover-24.png");
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -240,15 +240,15 @@ body {
 }
 
 .remover2:hover {
-    background: linear-gradient(0deg, rgba(107, 107, 107, 0.37), rgba(107, 107, 107, 0.37));
+    background: linear-gradient( 0deg, rgba(107, 107, 107, 0.37), rgba(107, 107, 107, 0.37));
 }
 
 .confirmar {
     min-width: 338px;
     min-height: 40px;
     margin-top: 3px;
-    background-color: #E25EBF;
-    color: #FDFDFD;
+    background-color: #e25ebf;
+    color: #fdfdfd;
     border: none;
     font-weight: bold;
     display: flex;
@@ -275,13 +275,13 @@ body {
     min-width: 310px;
     min-height: 40px;
     margin-top: 3px;
-    background-color: #0B1217;
-    color: #FDFDFD;
+    background-color: #0b1217;
+    color: #fdfdfd;
     border: none;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 10px;
-    background-image: url("icons8-bilhete-48.png");
+    background-image: url("pics/icons8-bilhete-48.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 30px;

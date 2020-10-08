@@ -175,14 +175,11 @@ body {
 .nota {
     display: flex;
     flex-direction: row;
-    align-self: center;
 }
 
 .infoEspecifica {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-content: flex-end;
 }
 
 .infoDeFilme {
@@ -190,20 +187,19 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .nomes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 8px;
-    margin-right: 8px;
+    align-items: flex-end;
 }
 
 .nomeDoFilme {
     font-weight: bold;
-    max-width: 116px;
-    max-height: 24px;
 }
 
 .notaDoFilme {
@@ -216,8 +212,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 8px;
-    margin-right: 8px;
     margin-bottom: 6px;
     background-color: #a785ed;
     border: none;
@@ -348,7 +342,6 @@ body {
 .inserirCupom {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 6px;
@@ -357,6 +350,7 @@ body {
 }
 
 .inserirCupom input {
+    display: flex;
     min-width: 310px;
     min-height: 40px;
     margin-top: 3px;
@@ -395,7 +389,7 @@ body {
     align-items: center;
     min-width: 312px;
     margin-top: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .infoDeFilmeSelecionado {
@@ -403,6 +397,8 @@ body {
     flex-direction: row;
     align-content: center;
     max-height: 67px;
+    max-width: 200px;
+    margin-right: 16px;
 }
 
 .posterDoFilmes {

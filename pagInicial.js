@@ -1,20 +1,20 @@
 //fetch com lista de filmes
 const listaDeFilmesGeral = (url) => {
-        return fetch(url).then(resposta => resposta.json())
-    }
-    //criar top filmes
+    return fetch(url).then((resposta) => resposta.json());
+};
+//criar top filmes
 const topFilmes = (filmes) => {
     const filme = document.createElement("div");
     filme.classList.add("filme");
-    divFilmes.appendChild(filme)
+    divFilmes.appendChild(filme);
 
     const infoDeFilme = document.createElement("div");
     infoDeFilme.classList.add("infoDeFilme");
     filme.appendChild(infoDeFilme);
 
-    const estrelinha = document.createElement("img")
-    estrelinha.classList.add("estrelinha")
-    estrelinha.style.background = "url('Star_2.png')"
+    const estrelinha = document.createElement("img");
+    estrelinha.classList.add("estrelinha");
+    estrelinha.style.background = "url('Star_2.png')";
     infoDeFilme.appendChild(estrelinha);
 
     const infoEspecifica = document.createElement("div");
@@ -34,13 +34,13 @@ const topFilmes = (filmes) => {
     nota.classList.add("nota");
     nomes.appendChild(nota);
 
-    const estrelinha2 = document.createElement("img")
-    estrelinha2.classList.add("estrelinha2")
-    estrelinha2.style.background = "url('Star_1.png')"
+    const estrelinha2 = document.createElement("img");
+    estrelinha2.classList.add("estrelinha2");
+    estrelinha2.style.background = "url('Star_1.png')";
     nota.appendChild(estrelinha2);
 
-    const notaDoFilme = document.createElement("p")
-    notaDoFilme.classList.add("notaDoFilme")
+    const notaDoFilme = document.createElement("p");
+    notaDoFilme.classList.add("notaDoFilme");
     notaDoFilme.innerText = `${filmes.vote_average}`;
     nota.appendChild(notaDoFilme);
 
@@ -48,12 +48,12 @@ const topFilmes = (filmes) => {
     sacolaDoFilme.classList.add("sacolaDoFilme");
     infoEspecifica.appendChild(sacolaDoFilme);
 
-    const sacolatexto = document.createElement("p")
+    const sacolatexto = document.createElement("p");
     sacolatexto.innerText = "Sacola";
     sacolaDoFilme.appendChild(sacolatexto);
 
     const precoDoFilme = document.createElement("p");
-    precoDoFilme.innerText = `R$ ${filmes.price}`
+    precoDoFilme.innerText = `R$ ${filmes.price}`;
     sacolaDoFilme.appendChild(precoDoFilme);
 
     filme.style.background = `url(${filmes.poster_path})`;
@@ -63,26 +63,24 @@ const topFilmes = (filmes) => {
     sacolaDoFilme.addEventListener("click", () => {
         const sacolaVazia = document.querySelector(".sacolaVazia");
         sacolaVazia.setAttribute("hidden", "");
-        addFilmeNaSacola(filmes)
-
-    })
+        addFilmeNaSacola(filmes);
+    });
 
     return filme;
-}
-
+};
 
 const filmesGeral = (filmes) => {
     const filme = document.createElement("div");
     filme.classList.add("filme");
-    divFilmes.appendChild(filme)
+    divFilmes.appendChild(filme);
 
     const infoDeFilme = document.createElement("div");
     infoDeFilme.classList.add("infoDeFilme");
     filme.appendChild(infoDeFilme);
 
-    const estrelinha = document.createElement("img")
-    estrelinha.classList.add("estrelinha")
-    estrelinha.style.background = "url('Star_2.png')"
+    const estrelinha = document.createElement("img");
+    estrelinha.classList.add("estrelinha");
+    estrelinha.style.background = "url('Star_2.png')";
     infoDeFilme.appendChild(estrelinha);
 
     const infoEspecifica = document.createElement("div");
@@ -102,13 +100,13 @@ const filmesGeral = (filmes) => {
     nota.classList.add("nota");
     nomes.appendChild(nota);
 
-    const estrelinha2 = document.createElement("img")
-    estrelinha2.classList.add("estrelinha2")
-    estrelinha2.style.background = "url('Star_1.png')"
+    const estrelinha2 = document.createElement("img");
+    estrelinha2.classList.add("estrelinha2");
+    estrelinha2.style.background = "url('Star_1.png')";
     nota.appendChild(estrelinha2);
 
-    const notaDoFilme = document.createElement("p")
-    notaDoFilme.classList.add("notaDoFilme")
+    const notaDoFilme = document.createElement("p");
+    notaDoFilme.classList.add("notaDoFilme");
     notaDoFilme.innerText = `${filmes.vote_average}`;
     nota.appendChild(notaDoFilme);
 
@@ -116,12 +114,12 @@ const filmesGeral = (filmes) => {
     sacolaDoFilme.classList.add("sacolaDoFilme");
     infoEspecifica.appendChild(sacolaDoFilme);
 
-    const sacolatexto = document.createElement("p")
+    const sacolatexto = document.createElement("p");
     sacolatexto.innerText = "Sacola";
     sacolaDoFilme.appendChild(sacolatexto);
 
     const precoDoFilme = document.createElement("p");
-    precoDoFilme.innerText = `R$ ${filmes.price}`
+    precoDoFilme.innerText = `R$ ${filmes.price}`;
     sacolaDoFilme.appendChild(precoDoFilme);
 
     filme.style.background = `url(${filmes.poster_path})`;
@@ -131,12 +129,11 @@ const filmesGeral = (filmes) => {
     sacolaDoFilme.addEventListener("click", () => {
         const sacolaVazia = document.querySelector(".sacolaVazia");
         sacolaVazia.setAttribute("hidden", "");
-        addFilmeNaSacola(filmes)
-
-    })
+        addFilmeNaSacola(filmes);
+    });
 
     return filme;
-}
+};
 
 //criar filme na sacola
 const addFilmeNaSacola = (filmes) => {
@@ -151,7 +148,7 @@ const addFilmeNaSacola = (filmes) => {
     const posterDoFilmes = document.createElement("span");
     posterDoFilmes.classList.add("posterDoFilmes");
     posterDoFilmes.style.background = `url(${filmes.poster_path})`;
-    posterDoFilmes.backgroundSize = "cover";
+    posterDoFilmes.backgroundSize = "contains";
     posterDoFilmes.style.backgroundRepeat = "no-repeat";
     posterDoFilmes.style.backgroundPosition = "center";
     infoDeFilmeSelecionado.appendChild(posterDoFilmes);
@@ -185,9 +182,7 @@ const addFilmeNaSacola = (filmes) => {
     adicionar.addEventListener("click", () => {
         qtdFilme += 1;
         quantidade.innerText = `${qtdFilme}`;
-
-    })
-
+    });
 
     const quantidade = document.createElement("p");
     quantidade.classList.add("quantidade");
@@ -208,47 +203,37 @@ const addFilmeNaSacola = (filmes) => {
             if (!filmeSelecionado) {
                 sacolaVazia.toggleAttribute("hidden");
             }
-
         }
-    })
-
-}
-
-
-
+    });
+};
 
 //filmes na pagina principal
 let precoConfirmar = document.querySelector(".precoConfirmar");
 let sacolaVazia = document.querySelector(".sacolaVazia");
 let sacolaPrincipal = document.querySelector(".sacolaPrincipal");
 let divFilmes = document.querySelector(".filmes");
-let divFilmes2 = document.querySelector(".listaFilmes2 .filmes")
-fetch("https://tmdb-proxy-workers.vhfmag.workers.dev/3/discover/movie?language=pt-BR")
-    .then(resposta => resposta.json())
-    .then(respostaJson => {
-
+let divFilmes2 = document.querySelector(".listaFilmes2 .filmes");
+fetch(
+        "https://tmdb-proxy-workers.vhfmag.workers.dev/3/discover/movie?language=pt-BR"
+    )
+    .then((resposta) => resposta.json())
+    .then((respostaJson) => {
         for (let i = 0; i < 5; i++) {
             let filme = topFilmes(respostaJson.results[i]);
-            divFilmes.append(filme)
-
+            divFilmes.append(filme);
         }
         for (let i = 0; i < 20; i++) {
             let filme = filmesGeral(respostaJson.results[i]);
-            divFilmes2.append(filme)
-
+            divFilmes2.append(filme);
         }
-
-
-
-    })
+    });
 
 const fetchGenero = (url) => {
     fetch(url)
-        .then(resposta => resposta.json())
-        .then(respostaJson => {
-
-            let divFilmes2 = document.querySelector(".listaFilmes2 .filmes")
-            let listaFilmes2 = document.querySelector(".listaFilmes2")
+        .then((resposta) => resposta.json())
+        .then((respostaJson) => {
+            let divFilmes2 = document.querySelector(".listaFilmes2 .filmes");
+            let listaFilmes2 = document.querySelector(".listaFilmes2");
             divFilmes2.remove();
 
             for (let i = 0; i < 5; i++) {
@@ -257,38 +242,44 @@ const fetchGenero = (url) => {
 
                 for (let j = 0; j < 20; j++) {
                     let filme = filmesGeral(respostaJson.results[i + j]);
-                    filmes.append(filme)
+                    filmes.append(filme);
                 }
-                listaFilmes2.append(filmes)
-
+                listaFilmes2.append(filmes);
             }
-        })
-}
-
+        });
+};
 
 //botões de gênero do filme
 const botoesGenero = document.querySelectorAll(".botoesDosGenero");
 for (const botao of botoesGenero) {
-
-    botao.addEventListener("click", event => {
-        if (botao.classList.contains('clicked')) {
-            botao.classList.remove('clicked');
+    botao.addEventListener("click", (event) => {
+        if (botao.classList.contains("clicked")) {
+            botao.classList.remove("clicked");
         }
 
         const clicado = event.target;
         if (clicado.innerText === "Todos") {
-            fetchGenero(`https://tmdb-proxy-workers.vhfmag.workers.dev/3/discover/movie?language=pt-BR`)
-
+            fetchGenero(
+                `https://tmdb-proxy-workers.vhfmag.workers.dev/3/discover/movie?language=pt-BR`
+            );
         } else if (clicado.innerText === "Ação") {
-            fetchGenero(`https://tmdb-proxy-workers.vhfmag.workers.dev/3/discover/movie?with_genres=28&language=pt-BR`)
+            fetchGenero(
+                `https://tmdb-proxy-workers.vhfmag.workers.dev/3/discover/movie?with_genres=28&language=pt-BR`
+            );
         } else if (clicado.innerText === "Romance") {
-            fetchGenero(`https://tmdb-proxy-workers.vhfmag.workers.dev/3/discover/movie?with_genres=10749&language=pt-BR`)
+            fetchGenero(
+                `https://tmdb-proxy-workers.vhfmag.workers.dev/3/discover/movie?with_genres=10749&language=pt-BR`
+            );
         } else if (clicado.innerText === "Ficção Científica") {
-            fetchGenero(`https://tmdb-proxy-workers.vhfmag.workers.dev/3/discover/movie?with_genres=878&language=pt-BR`)
+            fetchGenero(
+                `https://tmdb-proxy-workers.vhfmag.workers.dev/3/discover/movie?with_genres=878&language=pt-BR`
+            );
         } else if (clicado.innerText === "Terror") {
-            fetchGenero(`https://tmdb-proxy-workers.vhfmag.workers.dev/3/discover/movie?with_genres=27&language=pt-BR`)
+            fetchGenero(
+                `https://tmdb-proxy-workers.vhfmag.workers.dev/3/discover/movie?with_genres=27&language=pt-BR`
+            );
         }
-    })
+    });
 }
 
 //botão confirmar compra
@@ -296,8 +287,6 @@ for (const botao of botoesGenero) {
 /*btCompra.addEventListener("click", () => {
 
 })*/
-
-
 
 //banner contador
 const temporizador = document.querySelector(".tempoDoCupom");
@@ -310,16 +299,16 @@ const contador = () => {
     segundos--;
     if (segundos === 0) {
         minutos--;
-        segundos = 59
+        segundos = 59;
 
         if (minutos === -1) {
             banner.style.display = "none";
-            clearInterval(tempo)
+            clearInterval(tempo);
         }
     }
-}
+};
 
-let tempo = setInterval(contador, 1000)
+let tempo = setInterval(contador, 1000);
 
 // adicionar cupom clicando no banner
 banner.addEventListener("click", () => {
@@ -329,5 +318,4 @@ banner.addEventListener("click", () => {
 
     cupomPreenchido.value = cupom.innerText;
     banner.style.display = "none";
-
-})
+});

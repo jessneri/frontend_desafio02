@@ -1,6 +1,6 @@
 body {
     box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
     margin: 0;
     background-color: #252829;
     min-height: 100vh;
@@ -10,7 +10,7 @@ body {
 /*cabeçalho*/
 
 .cabecalho {
-    background-color: #0F1C26;
+    background-color: #0f1c26;
     min-height: 104px;
     display: flex;
     justify-content: space-evenly;
@@ -21,11 +21,11 @@ body {
 .pesquisa {
     min-width: 456px;
     min-height: 56px;
-    background-color: #171B1E;
-    color: #FDFDFD;
+    background-color: #171b1e;
+    color: #fdfdfd;
     border: none;
     padding-left: 15px;
-    background-image: url("icons8-pesquisar-64.png");
+    background-image: url("pics/icons8-pesquisar-64.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 30px;
@@ -73,8 +73,8 @@ body {
     align-items: center;
     min-width: 784px;
     min-height: 443px;
-    background-color: #171B1E;
-    color: #E8E8E8;
+    background-color: #171b1e;
+    color: #e8e8e8;
     margin-top: 100px;
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .sucesso button {
-    background-color: #E25EBF;
+    background-color: #e25ebf;
     border: none;
     min-width: 456px;
     min-height: 56px;
